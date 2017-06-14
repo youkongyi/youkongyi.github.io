@@ -1,13 +1,10 @@
-<!DOCTYPE html><html lang="zh-CN"><head><meta charset="utf-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width, initial-scale=1"><meta name="author" content="Gehanbiao"><meta name="description" conauthortent="个人博客仅测试使用"><link rel="alternative" href="/atom.xml" title="youkongyi'blog" type="application/atom+xml"><link rel="icon" href="/favicon.png"><title>Hexo+Github搭建属于自己的博客 - youkongyi'blog</title><link rel="stylesheet" href="/css/main.css"><link rel="stylesheet" href="/js/fancybox/jquery.fancybox.min.css"><!--[if lt IE 9]><script>(function(a,b){a="abbr article aside audio bdi canvas data datalist details dialog figcaption figure footer header hgroup main mark meter nav output progress section summary template time video".split(" ");for(b=a.length-1;b>=0;b--)document.createElement(a[b])})()</script><![endif]--><script src="/js/jquery-3.1.1.min.js"></script><script src="/js/fancybox/jquery.fancybox.min.js"></script></head><body style="opacity:0;"><header class="head"><h1 class="head-title u-fl"><a href="/">youkongyi'blog</a></h1><nav class="head-nav u-fr"><ul class="head-nav__list"><li class="head-nav__item"><a class="head-nav__link" href="/archives">目录</a></li></ul></nav></header><main class="main"><article class="post"><header class="post__head"> <time class="post__time" datetime="2017-06-13T09:21:11.000Z">June 13, 2017</time><h1 class="post__title"><a href="/2017/06/13/article-title/">Hexo+Github搭建属于自己的博客</a></h1><div class="post__main echo"><h1 id="Hexo-Github搭建属于自己的博客"><a href="#Hexo-Github搭建属于自己的博客" class="headerlink" title="Hexo+Github搭建属于自己的博客"></a>Hexo+Github搭建属于自己的博客</h1><p>[========]</p>
-<p>[========]</p>
-<h4 id="整体步骤"><a href="#整体步骤" class="headerlink" title="整体步骤"></a>整体步骤</h4><hr>
+<!DOCTYPE html><html lang="zh-CN"><head><meta charset="utf-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width, initial-scale=1"><meta name="author" content="Gehanbiao"><meta name="description" conauthortent="个人博客仅测试使用"><link rel="alternative" href="/atom.xml" title="youkongyi'blog" type="application/atom+xml"><link rel="icon" href="/favicon.png"><title>Hexo+Github搭建属于自己的博客 - youkongyi'blog</title><link rel="stylesheet" href="/css/main.css"><link rel="stylesheet" href="/js/fancybox/jquery.fancybox.min.css"><!--[if lt IE 9]><script>(function(a,b){a="abbr article aside audio bdi canvas data datalist details dialog figcaption figure footer header hgroup main mark meter nav output progress section summary template time video".split(" ");for(b=a.length-1;b>=0;b--)document.createElement(a[b])})()</script><![endif]--><script src="/js/jquery-3.1.1.min.js"></script><script src="/js/fancybox/jquery.fancybox.min.js"></script></head><body style="opacity:0;"><header class="head"><h1 class="head-title u-fl"><a href="/">youkongyi'blog</a></h1><nav class="head-nav u-fr"><ul class="head-nav__list"><li class="head-nav__item"><a class="head-nav__link" href="/archives">目录</a></li></ul></nav></header><main class="main"><article class="post"><header class="post__head"> <time class="post__time" datetime="2017-06-13T09:21:11.000Z">June 13, 2017</time><h1 class="post__title"><a href="/2017/06/13/article-title/">Hexo+Github搭建属于自己的博客</a></h1><div class="post__main echo"><h1 id="Hexo-Github搭建属于自己的博客"><a href="#Hexo-Github搭建属于自己的博客" class="headerlink" title="Hexo+Github搭建属于自己的博客"></a>Hexo+Github搭建属于自己的博客</h1><h4 id="整体步骤"><a href="#整体步骤" class="headerlink" title="整体步骤"></a>整体步骤</h4><hr>
 <pre><code>环境准备（Node.js环境和git环境，注册github）
 安装和配置Hexo
 将Hexo与Github连接起来
 主题，图标，头像等细节配置
 发布与更新
-</code></pre><p>[========]</p>
-<p>[TOCM]</p>
+</code></pre><p>[TOCM]</p>
 <h4 id="环境准备"><a href="#环境准备" class="headerlink" title="环境准备"></a>环境准备</h4><hr>
 <h5 id="安装node-js"><a href="#安装node-js" class="headerlink" title="安装node.js"></a>安装<a href="https://nodejs.org/zh-cn/" title="node.js" target="_blank" rel="external">node.js</a></h5><hr>
 <p>一路下一步即可，安装完后，使用如下两行代码检查版本号（如下图则安装正确）：<br><figure class="highlight shell"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line">node -v</div><div class="line"> v6.11.0</div><div class="line">npm -v</div><div class="line"> 3.10.10</div></pre></td></tr></table></figure></p>
@@ -19,12 +16,12 @@
 <p>出现以上字段,说明测试成功</p>
 <hr>
 <h5 id="创建新仓库"><a href="#创建新仓库" class="headerlink" title="创建新仓库"></a>创建新仓库</h5><hr>
-<p>登陆之后，点击页面右上角的加号，选择New repository：<br><img src="G:\Hexo\source\repository.png" alt=""></p>
+<p>登陆之后，点击页面右上角的加号，选择New repository：<br><img src="/images/repository.png" alt=""></p>
 <p>进入代码库创建页面：</p>
-<p>在Repository name下填写yourname.github.io，如图所示：<br><img src="G:\Hexo\source\name.png" alt=""></p>
+<p>在Repository name下填写yourname.github.io，如图所示：<br><img src="/images/name.png" alt=""></p>
 <p>注意：Repository name 可以自行更改，最好改成你的英文名字或拼音以 .github.io 结尾</p>
 <hr>
 <h5 id="安装Hexo"><a href="#安装Hexo" class="headerlink" title="安装Hexo"></a>安装<a href="https://hexo.io/zh-cn/index.html" title="Hexo" target="_blank" rel="external">Hexo</a></h5><hr>
-<p>在自己认为合适的地方创建一个文件夹，这里我以E：/hexo 为例子讲解，首先在E盘目录下创建Hexo文件夹，并在命令行的窗口进入到该目录,如图所示:<br><img src="G:\Hexo\source\hexo.jpg" alt=""></p>
+<p>在自己认为合适的地方创建一个文件夹，这里我以E：/hexo 为例子讲解，首先在E盘目录下创建Hexo文件夹，并在命令行的窗口进入到该目录,如图所示:<br><img src="/images/hexo.jpg" alt=""></p>
 <p>在命令行中输入：<br><figure class="highlight shell"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">npm install hexo-cli -g</div></pre></td></tr></table></figure></p>
 </div></header><footer class="post__foot u-cf"><ul class="post__tag u-fl"><li class="post__tag__item"><a class="post__tag__link" href="/tags/Hexo、Github/">Hexo、Github</a></li></ul></footer></article><section class="reward"> <a class="btn-reward" href="#">打赏</a><div class="reward-wrapper clearfix"><img src="/img/wechat.png" title="微信"></div></section></main><footer class="foot"><div class="foot-copy">&copy; 2016-2017 Gehanbiao</div></footer><script src="/js/scroller.js"></script><script src="/js/main.js"></script></body></html>
