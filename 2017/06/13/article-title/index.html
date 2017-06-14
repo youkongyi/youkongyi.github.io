@@ -5,8 +5,7 @@
 <li>&nbsp;&nbsp;<a href="#ct1" style="text-decoration: none">环境准备（Node.js环境和git环境，注册github）</a></li>
 <li>&nbsp;&nbsp;<a href="#ct2" style="text-decoration: none">安装和配置Hexo</a></li>
 <li>&nbsp;&nbsp;<a href="#ct3" style="text-decoration: none">将Hexo与Github连接起来</a></li>
-<li>&nbsp;&nbsp;<a href="#ct4" style="text-decoration: none">主题，图标，头像等细节配置</a></li>
-<li>&nbsp;&nbsp;<a href="#ct5" style="text-decoration: none">发布与更新</a><br><br><br><a name="ct1" }=""></a></li>
+<li>&nbsp;&nbsp;<a href="#ct4" style="text-decoration: none">发布与更新</a><br><br><br><a name="ct1" }=""></a></li>
 </ol>
 <p></p><h2 style="margin-top: 0px;margin-bottom: 0px;">环境准备</h2><p></p>
 <hr style="FILTER: alpha(opacity=100,finishopacity=0,style=1)" width="100%" color="DarkTurquoise" size="1">
@@ -45,5 +44,14 @@
 
 <p>登陆之后，点击页面右上角的加号，选择New repository：<br><img src="/images/repository.png" alt=""><br>进入代码库创建页面：<br>在Repository name下填写yourname.github.io，如图所示：<br><img src="/images/name.png" alt=""><br>注意：Repository name 可以自行更改，最好改成你的英文名字或拼音以 .github.io 结尾</p>
 <p>然后,配置Deployment<br>在你所安装的Hexo文件夹根目录下_config.yml文件,找到Deployment<br>然后按照如下修改：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line">deploy:</div><div class="line">  type: git</div><div class="line">  repo: git@github.com:yourname/yourname.github.io.git *注意: git地址换成你自己的</div><div class="line">  branch: master</div></pre></td></tr></table></figure></p>
-<p>  <br></p>
+<p>  <a name="ct4" }=""></a></p>
+<p>  </p><h2 style="margin-top: 0px;margin-bottom: 0px;">写博客发文章</h2><br>  <hr style="FILTER: alpha(opacity=100,finishopacity=0,style=1)" width="100%" color="DarkTurquoise" size="1"><br>  新建一篇博客，执行下面的命令：<br>  <figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">hexo new post &quot;article title&quot;  *注意: &quot;article title&quot;文件名可以任意替换</div></pre></td></tr></table></figure><p></p>
+<p>   <img src="/images/hexo7.jpg" alt="hexo7"><br>  这时在Hexo根目录下source\ _posts 将会看到hexo生成的 article title.md 文件</p>
+<p>  用MarDown编辑器打开就可以编辑文章,编辑好之后<br>  运行生成部署命令：<br>  <figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">hexo d -g #在部署前先生成</div></pre></td></tr></table></figure></p>
+<p>   <img src="/images/hexo8.jpg" alt="hexo8"></p>
+<p>  部署成功后访问 你的地址，<a href="https://yourName.github.io" target="_blank" rel="external">https://yourName.github.io</a><br>  (如： <a href="https://youkongyi.github.io" target="_blank" rel="external">https://youkongyi.github.io</a> ),将可以看到生成的文章</p>
+<p>  *注意：<br>  需要提前安装一个扩展：<br>    <figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">npm install hexo-deployer-git --save</div></pre></td></tr></table></figure></p>
+<p>  如果没有执行命令，将会提醒：<br>    <figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">deloyer not found:git</div></pre></td></tr></table></figure></p>
+<p>  如果成功完成了上述的全部步骤，恭喜你，你已经搭建了一个最为简单且基础的博客.</p>
+<p>  参考网址/博客:<br>  <a href="https://sajiawuwu.github.io/2017/04/06/Hexo01" title="Jun" target="_blank" rel="external">Jun.blog: Hexo+Github搭建属于自己的博客</a><br>  <a href="http://blog.csdn.net/gdutxiaoxu/article/details/53576018?locationNum=3&amp;fps=1" title="gdutxiaoxu" target="_blank" rel="external">gdutxiaoxu.blog: 手把手教你用Hexo+Github 搭建属于自己的博客</a></p>
 </div></header><footer class="post__foot u-cf"><ul class="post__tag u-fl"><li class="post__tag__item"><a class="post__tag__link" href="/tags/Hexo、Github/">Hexo、Github</a></li></ul></footer></article><section class="reward"> <a class="btn-reward" href="#">打赏</a><div class="reward-wrapper clearfix"><img src="/img/wechat.png" title="微信"></div></section></main><footer class="foot"><div class="foot-copy">&copy; 2016-2017 Gehanbiao</div></footer><script src="/js/scroller.js"></script><script src="/js/main.js"></script></body></html>
