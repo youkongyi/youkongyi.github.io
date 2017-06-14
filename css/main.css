@@ -372,13 +372,7 @@ video {
 .echo ul {
   margin: 1.6em 0;
 }
-.echo hr {
-  margin: 1.6em auto;
-  width: 61%;
-  height: 4px;
-  border: none;
-  background: #eee;
-}
+
 .echo img {
   max-width: 100%;
   height: auto;
